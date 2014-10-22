@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
         name: info['nickname'],
         realname: info['name'],
         email: info['email'],
+        token: request['credentials']['token'],
         uid: uid
       )
     end
