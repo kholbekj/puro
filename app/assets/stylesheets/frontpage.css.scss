@@ -1,0 +1,21 @@
+body {
+  background-color: #242424;
+}
+
+.hero {
+  border: none;
+  background: asset_url('penwing.jpg');
+  background-size: 100%;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+.green {
+  color: #d9d9d9;
+  text-align: center;
+  h2 {
+    color: #d9d9d9;
+  }
+}
