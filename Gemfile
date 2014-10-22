@@ -12,6 +12,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'puma'
 
+gem 'foundation-rails'
+
 group :development do
   gem 'spring'
   gem 'capistrano-rails'
