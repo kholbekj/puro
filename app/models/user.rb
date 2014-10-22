@@ -8,11 +8,10 @@ class User < ActiveRecord::Base
       info = request['info']
 
       create!(
-        name: info['nickname'],
-        realname: info['name'],
-        email: info['email'],
-        token: request['credentials']['token'],
-        uid: uid
+        uid:      uid,
+        name:     info['nickname'],
+        email:    info['email'],
+        realname: info['name']
       )
     end
   end
