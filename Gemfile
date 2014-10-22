@@ -20,6 +20,7 @@ gem 'omniauth-github'
 
 group :development do
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'capistrano-rails'
   gem 'pry'
 end
