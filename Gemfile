@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.6'
 gem 'sqlite3'
+gem 'squeel'
 gem 'puma'
 gem 'sidekiq'
 
@@ -19,6 +20,7 @@ gem 'omniauth-github'
 
 group :development do
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'capistrano-rails'
   gem 'pry'
 end
