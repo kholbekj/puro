@@ -1,2 +1,14 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+<div class="row">
+  <h1 class="title">Organizations</h1>
+</div>
+<div class="row">
+  <p class="body">Please select an organization scoreboard.</p>
+</div>
+<div class="row">
+  <% @organizations.each do |organization| %>
+    <a href="#" class="large-5 columns organization">
+      <h3><%= organization.name %></h3>
+      <p>Currently has <%= organization.members %> members.</p>
+    </a>
+  <% end %>
+</div>

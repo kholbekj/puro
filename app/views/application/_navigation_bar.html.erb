@@ -1,0 +1,22 @@
+<nav class="top-bar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Puro</a></h1>
+    </li>
+  </ul>
+  <section class="top-bar-section right">
+    <ul>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <% if signed_in? %>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+        <li>
+          <%= link_to "Sign out", logout_path %>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+</nav>

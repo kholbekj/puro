@@ -15,4 +15,9 @@ class User < ActiveRecord::Base
       )
     end
   end
+
+  def organizations
+    [Organization.new('One Man Army', 1),Organization.new('AwwtuHutlers', 15)]
+  end
+  Organization = Struct.new(:name, :members)
 end
